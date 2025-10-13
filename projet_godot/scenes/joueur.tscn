@@ -5,23 +5,23 @@
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_uj1k6"]
 atlas = ExtResource("1_r36ky")
-region = Rect2(0, 896, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_pl28q"]
-atlas = ExtResource("1_r36ky")
-region = Rect2(0, 0, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_vv0fa"]
-atlas = ExtResource("1_r36ky")
-region = Rect2(0, 128, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_27mm1"]
-atlas = ExtResource("1_r36ky")
-region = Rect2(0, 640, 128, 128)
+region = Rect2(256, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2y66e"]
 atlas = ExtResource("1_r36ky")
-region = Rect2(0, 256, 128, 128)
+region = Rect2(128, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ivebw"]
+atlas = ExtResource("1_r36ky")
+region = Rect2(128, 256, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dga13"]
+atlas = ExtResource("1_r36ky")
+region = Rect2(128, 768, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qqscv"]
+atlas = ExtResource("1_r36ky")
+region = Rect2(128, 384, 128, 128)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_q5har"]
 animations = [{
@@ -35,10 +35,10 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_pl28q")
+"texture": SubResource("AtlasTexture_2y66e")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_vv0fa")
+"texture": SubResource("AtlasTexture_ivebw")
 }],
 "loop": true,
 "name": &"promener",
@@ -46,7 +46,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_27mm1")
+"texture": SubResource("AtlasTexture_dga13")
 }],
 "loop": true,
 "name": &"repos",
@@ -54,7 +54,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_2y66e")
+"texture": SubResource("AtlasTexture_qqscv")
 }],
 "loop": true,
 "name": &"sauter",
@@ -70,7 +70,7 @@ script = ExtResource("1_uj1k6")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -64)
 sprite_frames = SubResource("SpriteFrames_q5har")
-animation = &"promener"
+animation = &"sauter"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-0.5, -48)
