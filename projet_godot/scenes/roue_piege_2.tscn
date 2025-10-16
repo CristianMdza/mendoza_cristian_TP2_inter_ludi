@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://bhpef6bx1vbax"]
+
+[ext_resource type="Script" uid="uid://fo573kcg7ofu" path="res://scripts/roue_piege_2.gd" id="1_qop3e"]
+[ext_resource type="Texture2D" uid="uid://c3hc061eqtdjm" path="res://assets/sprites/roue_piege.png" id="2_ltot8"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ltot8"]
+radius = 32.0
+
+[node name="RouePiege_2" type="Area2D"]
+script = ExtResource("1_qop3e")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_ltot8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_ltot8")

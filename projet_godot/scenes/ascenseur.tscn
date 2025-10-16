@@ -1,19 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://dklftmfk5csx5"]
+[gd_scene load_steps=5 format=3 uid="uid://dklftmfk5csx5"]
 
 [ext_resource type="Script" uid="uid://02rpfi11kcyf" path="res://scripts/ascenseur.gd" id="1_h6qi5"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ge4ol"]
-load_path = "res://.godot/imported/spritesheet-tiles-default.png-762c90478e96cb898331e06145f67c12.ctex"
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_h6qi5"]
-atlas = SubResource("CompressedTexture2D_ge4ol")
-region = Rect2(256, 192, 64, 64)
-filter_clip = true
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_do25p"]
-atlas = SubResource("CompressedTexture2D_ge4ol")
-region = Rect2(256, 128, 64, 64)
-filter_clip = true
+[ext_resource type="Texture2D" uid="uid://cypp0ocjfy2l4" path="res://assets/sprites/ascenseur_mauve_block_left.png" id="2_kri3e"]
+[ext_resource type="Texture2D" uid="uid://dksx6tx4fsf28" path="res://assets/sprites/ascenseur_mauve_block_right.png" id="3_wbmyc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ge4ol"]
 size = Vector2(112, 42)
@@ -24,11 +13,11 @@ range_y = 256
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(-32, 0)
-texture = SubResource("AtlasTexture_h6qi5")
+texture = ExtResource("2_kri3e")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
 position = Vector2(32, 0)
-texture = SubResource("AtlasTexture_do25p")
+texture = ExtResource("3_wbmyc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -11)

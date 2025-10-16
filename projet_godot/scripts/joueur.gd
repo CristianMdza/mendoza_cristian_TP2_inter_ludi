@@ -53,3 +53,16 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
+	
+func die():
+	# Désactive les contrôles du joueur
+	set_physics_process(false)
+	
+	# Joue une animation de mort si tu en as une
+	$AnimatedSprite2D.play("mort")
+	
+	# Petit délai avant de redémarrer le niveau
+	await get_tree().create_timer(1.0).timeout
+	
+	# Recharge la scène actuelle (fait "respawn" du joueur)
+	get_tree().reload_current_scene()
