@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://b6lvhapdj55iw"]
+
+[ext_resource type="Script" uid="uid://bea0qgg0ph0pf" path="res://scripts/piege_a_pointes_3.gd" id="1_voiko"]
+[ext_resource type="Texture2D" uid="uid://dwy1gg1kpuyew" path="res://assets/sprites/piege_a_pointes.png" id="2_0tvmm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vx1pq"]
+size = Vector2(47, 34)
+
+[node name="PiegeAPointes_3" type="Area2D"]
+script = ExtResource("1_voiko")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_0tvmm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 15)
+shape = SubResource("RectangleShape2D_vx1pq")

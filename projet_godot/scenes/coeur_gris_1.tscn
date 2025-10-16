@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://dlh85wjbggojy"]
+
+[ext_resource type="Script" uid="uid://b4xk7moe2smim" path="res://scripts/coeur_gris_1.gd" id="1_6ktgq"]
+[ext_resource type="Texture2D" uid="uid://btyvsy3fxfwrg" path="res://assets/sprites/coeur_gris.png" id="2_3w8f5"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_r8ikw"]
+radius = 23.0217
+
+[node name="CoeurGris_1" type="Area2D"]
+script = ExtResource("1_6ktgq")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_3w8f5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1)
+shape = SubResource("CircleShape2D_r8ikw")

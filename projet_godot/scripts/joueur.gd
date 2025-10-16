@@ -55,14 +55,14 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 	
 func die():
-	# Désactive les contrôles du joueur
+	# Désactive les contrôles du joueur.
 	set_physics_process(false)
 	
-	# Joue une animation de mort si tu en as une
+	# Joue une animation de mort si le joueur en as une.
 	$AnimatedSprite2D.play("mort")
 	
-	# Petit délai avant de redémarrer le niveau
+	# Petit délai avant de redémarrer le niveau.
 	await get_tree().create_timer(1.0).timeout
 	
-	# Recharge la scène actuelle (fait "respawn" du joueur)
+	# Recharge la scène actuelle (fait "réapparaître" le joueur).
 	get_tree().reload_current_scene()
