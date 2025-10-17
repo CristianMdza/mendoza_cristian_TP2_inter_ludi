@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://cysatdenrwtpg"]
+
+[ext_resource type="Script" uid="uid://dnl57l3bip51o" path="res://scripts/alien_jaune_encapsule_1.gd" id="1_3binb"]
+[ext_resource type="Texture2D" uid="uid://hbd2kmjj20dr" path="res://assets/sprites/alien_jaune_encapsule.png" id="2_mce26"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_r8ikw"]
+radius = 28.0179
+
+[node name="AlienJauneEncapsule_1" type="Area2D"]
+script = ExtResource("1_3binb")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_mce26")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1)
+shape = SubResource("CircleShape2D_r8ikw")

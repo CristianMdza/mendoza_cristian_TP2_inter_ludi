@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://b1otl5fryemlh"]
+
+[ext_resource type="Script" uid="uid://b2qsdpy1dr1so" path="res://scripts/alien_rose_encapsule_1.gd" id="1_kixgw"]
+[ext_resource type="Texture2D" uid="uid://d3gqy7g8rnj7h" path="res://assets/sprites/alien_rose_encapsule.png" id="2_j7j3e"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_r8ikw"]
+radius = 28.0179
+
+[node name="AlienRoseEncapsule_1" type="Area2D"]
+script = ExtResource("1_kixgw")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_j7j3e")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_r8ikw")

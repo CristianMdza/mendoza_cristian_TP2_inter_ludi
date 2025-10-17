@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://cula1br1haac5"]
+
+[ext_resource type="Script" uid="uid://0tyamjvnxurf" path="res://scripts/piege_bloc_a_pointes_1.gd" id="1_ptnfk"]
+[ext_resource type="Texture2D" uid="uid://cqorqkyerpkk2" path="res://assets/sprites/piege_bloc_a_pointes.png" id="2_v56vj"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_kprm5"]
+radius = 34.0147
+
+[node name="PiegeBlocAPointes_1" type="Area2D"]
+script = ExtResource("1_ptnfk")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_v56vj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_kprm5")

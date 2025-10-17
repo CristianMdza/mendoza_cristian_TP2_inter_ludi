@@ -13,7 +13,7 @@ func _ready():
 	# Connecte le signal pour détecter le joueur.
 	connect("body_entered", Callable(self, "_on_body_entered"))
 
-func _process(delta):
+func _process(_delta):
 	# Mouvement vertical flottant.
 	position.y = start_y + sin(Time.get_ticks_msec() / 1000.0 * float_speed) * float_height
 

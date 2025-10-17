@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://cw0b8ue6kq21s"]
+
+[ext_resource type="Script" uid="uid://nytg167eq1eo" path="res://scripts/etoile_1.gd" id="1_4novc"]
+[ext_resource type="Texture2D" uid="uid://5fbi100axxb8" path="res://assets/sprites/etoile.png" id="2_5rnsg"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_kprm5"]
+radius = 19.0
+
+[node name="Etoile_1" type="Area2D"]
+script = ExtResource("1_4novc")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_5rnsg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_kprm5")
