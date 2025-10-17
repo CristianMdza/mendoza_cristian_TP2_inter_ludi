@@ -5,7 +5,7 @@ extends Area2D
 @export var scale_amount = 0.05    # Amplitude de la pulsation (scale)
 @export var scale_speed = 1.0     # Vitesse de la pulsation
 
-var start_y                       # Position de départ sur l'axe Y
+var start_y # Position de départ sur l'axe Y.
 
 func _ready():
 	# Sauvegarde la position de départ.
@@ -15,7 +15,7 @@ func _ready():
 	animate_float_scale()
 
 func _process(_delta):
-	# Effet de flottement vertical (comme le diamant).
+	# Effet de flottement vertical.
 	position.y = start_y + sin(Time.get_ticks_msec() / 1000.0 * float_speed) * float_height
 
 func animate_float_scale():

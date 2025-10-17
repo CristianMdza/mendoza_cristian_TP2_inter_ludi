@@ -19,5 +19,5 @@ func _process(_delta):
 
 func _on_body_entered(body):
 	if body.is_in_group("Player"):
-		emit_signal("collected")  # Optionnel : tu peux connecter ce signal à ton jeu principal
-		queue_free()  # L'objet disparaît (ramassé)
+		emit_signal("collected")  # Ça c'est optionnel, je peux connecter ce signal à mon jeu principal.
+		queue_free()  # L'objet disparaît (il est ramassé)

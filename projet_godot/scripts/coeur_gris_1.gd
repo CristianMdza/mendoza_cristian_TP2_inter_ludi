@@ -20,5 +20,5 @@ func animate_float():
 
 func _on_body_entered(body):
 	if body.is_in_group("Player"):
-		emit_signal("collected")  # Optionnel : pour notifier le jeu principal.
-		queue_free()  # L'objet disparaît (ramassé).
+		emit_signal("collected")  # Ça c'est optionnel pour notifier le jeu principal.
+		queue_free()  # L'objet disparaît (il est ramassé).

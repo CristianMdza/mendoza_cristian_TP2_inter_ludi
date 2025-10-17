@@ -16,7 +16,7 @@ func _process(delta):
 	# Rotation
 	rotation_degrees += rotation_speed * delta
 
-	# Mouvement vertical sinusoïdal
+	# Mouvement vertical alternant.
 	position.y = start_y + sin(Time.get_ticks_msec() / 500.0 * speed) * distance
 
 func _on_body_entered(body):

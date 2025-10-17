@@ -15,14 +15,14 @@ func _on_body_entered(body):
 	if body.is_in_group("joueur"):
 		joueur_dedans = body
 		
-		# Joue l'animation d'ouverture
+		# Joue l'animation d'ouverture.
 		$AnimationPlayer.play("ouvrir")
 		
 		# Applique une force diagonale (haut + gauche)
 		body.velocity.y = force_saut_verticale
 		body.velocity.x = force_saut_horizontale
 		
-		# (optionnel) petit son
+		# (Ça c'est optionnel) petit son.
 		if $AudioStreamPlayer:
 			$AudioStreamPlayer.play()
 
@@ -30,6 +30,6 @@ func _on_body_exited(body):
 	if body.is_in_group("joueur"):
 		joueur_dedans = null
 		
-		# Ferme le trampoline après un petit délai
+		# Ferme le trampoline après un petit délai.
 		await get_tree().create_timer(delai_fermeture).timeout
 		$AnimationPlayer.play("fermer")
