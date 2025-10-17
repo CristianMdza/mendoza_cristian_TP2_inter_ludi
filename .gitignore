@@ -4,3 +4,4 @@
 *.mono/
 *.import
 *.godot
+.DS_Store
