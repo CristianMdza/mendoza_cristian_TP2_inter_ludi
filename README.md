@@ -15,7 +15,7 @@ Le but : **atteindre le drapeau jaune** sans mourir.
 ---
 
 ## Contexte
-Projet basé sur un jeu créé par **[Nom du professeur]** dans le cadre du cours *Développement de jeux 2D (Godot)* au **Collège Montmorency**.  
+Projet basé sur un jeu créé par **Enric Granzotto Llagostera** dans le cadre du cours *Intéractivité Ludique* au **Collège Montmorency**.  
 J’ai fait un **fork** du projet original pour le modifier et lui donner une nouvelle ambiance.
 
 ---
