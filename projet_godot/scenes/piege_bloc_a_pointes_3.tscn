@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://bmo2fc8x1koo2"]
+
+[ext_resource type="Script" uid="uid://ckic1c1rqqsov" path="res://scripts/piege_bloc_a_pointes_3.gd" id="1_05kqf"]
+[ext_resource type="Texture2D" uid="uid://cqorqkyerpkk2" path="res://assets/sprites/piege_bloc_a_pointes.png" id="2_3sx6o"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3sx6o"]
+size = Vector2(192, 64)
+
+[node name="PiegeBlocAPointes_3" type="Area2D"]
+script = ExtResource("1_05kqf")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(64, 0)
+scale = Vector2(3, 1)
+texture = ExtResource("2_3sx6o")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(64, 0)
+shape = SubResource("RectangleShape2D_3sx6o")

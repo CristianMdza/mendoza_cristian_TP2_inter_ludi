@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://clofmvyhatvi2"]
+
+[ext_resource type="Texture2D" uid="uid://cqorqkyerpkk2" path="res://assets/sprites/piege_bloc_a_pointes.png" id="2_6y78a"]
+
+[sub_resource type="GDScript" id="GDScript_2sohg"]
+script/source = "extends Area2D
+
+func _ready():
+	# Active la détection et connecte le signal.
+	$CollisionShape2D.disabled = false
+	connect(\"body_entered\", Callable(self, \"_on_body_entered\"))
+
+func _on_body_entered(body):
+	# Si le corps qui entre est le joueur, déclenche sa mort.
+	if body.name == \"Joueur\":
+		body.die()
+"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3sx6o"]
+size = Vector2(64, 64)
+
+[node name="PiegeBlocAPointes_6" type="Area2D"]
+script = SubResource("GDScript_2sohg")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_6y78a")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_3sx6o")
