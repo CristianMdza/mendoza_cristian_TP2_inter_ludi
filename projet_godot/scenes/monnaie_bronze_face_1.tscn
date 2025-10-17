@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://ciua0n7rsnr41"]
+
+[ext_resource type="Script" uid="uid://prrgmmiadykw" path="res://scripts/monnaie_bronze_face_1.gd" id="1_goytu"]
+[ext_resource type="Texture2D" uid="uid://dpq105evjohir" path="res://assets/sprites/monnaie_bronze_face.png" id="2_s7rk2"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_6o7si"]
+radius = 19.0263
+
+[node name="MonnaieBronzeFace_1" type="Area2D"]
+script = ExtResource("1_goytu")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_s7rk2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_6o7si")

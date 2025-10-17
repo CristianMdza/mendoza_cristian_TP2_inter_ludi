@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://wuxn3qonyo5o"]
+
+[ext_resource type="Script" uid="uid://qbluu2d0gbe6" path="res://scripts/monnaie_argent_face_1.gd" id="1_mv2ak"]
+[ext_resource type="Texture2D" uid="uid://dxi6vm0eg57nj" path="res://assets/sprites/monnaie_argent_face.png" id="2_d0fws"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_6o7si"]
+radius = 19.0263
+
+[node name="MonnaieArgentFace_1" type="Area2D"]
+script = ExtResource("1_mv2ak")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_d0fws")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1)
+shape = SubResource("CircleShape2D_6o7si")

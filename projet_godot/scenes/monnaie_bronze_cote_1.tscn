@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://gkuawxdejkph"]
+
+[ext_resource type="Script" uid="uid://bl2jtx4llqpnl" path="res://scripts/monnaie_bronze_cote_1.gd" id="1_ct77u"]
+[ext_resource type="Texture2D" uid="uid://baoqe0ga2qeid" path="res://assets/sprites/monnaie_bronze_cote.png" id="2_q2yo0"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xsk02"]
+radius = 8.0
+height = 40.0
+
+[node name="MonnaieBronzeCote_1" type="Area2D"]
+script = ExtResource("1_ct77u")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_q2yo0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1)
+shape = SubResource("CapsuleShape2D_xsk02")
