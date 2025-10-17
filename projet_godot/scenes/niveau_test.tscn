@@ -1,5 +1,6 @@
-[gd_scene load_steps=41 format=4 uid="uid://df4o6yn6uk8hi"]
+[gd_scene load_steps=42 format=4 uid="uid://df4o6yn6uk8hi"]
 
+[ext_resource type="Texture2D" uid="uid://wwa0bi4rn6yv" path="res://assets/sprites/background_neige_1.png" id="1_6k0gs"]
 [ext_resource type="TileSet" uid="uid://cwqycux5h0q2u" path="res://assets/spritesheets/paysage_tile_set.tres" id="1_lbg1e"]
 [ext_resource type="Texture2D" uid="uid://cexvp6k7pp0fd" path="res://assets/sprites/terrain_mauve_block_left.png" id="2_fva0r"]
 [ext_resource type="PackedScene" uid="uid://dirydc1jhbrdb" path="res://scenes/joueur.tscn" id="2_ktk5d"]
@@ -44,6 +45,12 @@
 size = Vector2(128, 189)
 
 [node name="NiveauTest" type="Node"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -128.0
+offset_right = 1536.0
+offset_bottom = 894.0
+texture = ExtResource("1_6k0gs")
 
 [node name="Ascenseur" parent="." instance=ExtResource("5_tiqbr")]
 position = Vector2(960, 544)
