@@ -8,7 +8,7 @@ Paquets de ressources visuels : New Platformer pack, par Kenney <https://kenney.
 
 ---
 
-# Alien Escape
+# Nom du jeu: Alien Escape
 
 ## Description
 Petit jeu de plateforme 2D où un **alien** explore un **monde glacial** rempli d’obstacles, de trampolines et de pièges.  
