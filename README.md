@@ -39,7 +39,7 @@ J’ai fait un **fork** du projet original pour le modifier et lui donner une no
 - **Version modifiée par :** Cristian Mendoza - Collège Montmorency.  
 - **Moteur :** Godot 4.4.1 stable
 - **Background :** https://opengameart.org/content/8-bit-yeti
-- **Sprites et Spritesheets: Projet et jeu original.
+- **Sprites et Spritesheets :** Projet et jeu original.
 
 
 ## Licence
