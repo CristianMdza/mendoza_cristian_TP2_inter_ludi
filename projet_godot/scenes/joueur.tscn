@@ -76,10 +76,11 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uj1k6"]
 size = Vector2(58, 64)
 
-[node name="Joueur" type="CharacterBody2D"]
+[node name="Joueur" type="CharacterBody2D" groups=["Player", "joueur"]]
+z_index = 2
 script = ExtResource("1_uj1k6")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." groups=["Player", "joueur"]]
 position = Vector2(-16, -48)
 scale = Vector2(0.75, 0.75)
 sprite_frames = SubResource("SpriteFrames_q5har")

@@ -12,6 +12,7 @@ region = Rect2(640, 832, 64, 64)
 filter_clip = true
 
 [node name="PanneauMessage" type="Area2D"]
+z_index = 1
 script = ExtResource("1_kd50q")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

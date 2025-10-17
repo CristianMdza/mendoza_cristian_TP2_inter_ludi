@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://br0l818j60382"]
+
+[ext_resource type="Script" uid="uid://cl74i5uooug02" path="res://scripts/escalier_bloc_bottom_1.gd" id="1_mults"]
+[ext_resource type="Texture2D" uid="uid://cfjr2kocj1xre" path="res://assets/sprites/escalier_bloc_center.png" id="2_ml0nv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qsgt0"]
+size = Vector2(64, 64)
+
+[node name="EscalierBlocBottom_1" type="Area2D"]
+script = ExtResource("1_mults")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_ml0nv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_qsgt0")
