@@ -91,7 +91,7 @@ anchor_bottom = 1.0
 offset_left = 218.0
 offset_top = 191.0
 offset_right = -217.0
-offset_bottom = -221.0
+offset_bottom = -148.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_kftfl")
@@ -122,6 +122,8 @@ grow_vertical = 2
 theme_override_font_sizes/font_size = 32
 text = "A ou D : Marche
 Espace : Saut
+Flèche du haut : Monter 
+Flèche du bas: Descendre 
 Échapper : Pause"
 
 [node name="InstructionsTitle" type="Label" parent="PauseMenu/InstructionsScreen"]
